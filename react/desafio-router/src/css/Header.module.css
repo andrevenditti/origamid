@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.link {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: gainsboro;
+  border-radius: 6px;
+  color: #000;
+}
+
+.active {
+  background-color: gray;
+}
