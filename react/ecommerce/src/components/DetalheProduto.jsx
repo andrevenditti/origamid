@@ -19,11 +19,11 @@ const DetalheProduto = () => {
     fetchData()
   }, [request, params.id])
 
-  if (loading) return <div>Carregando...</div>
+  if (loading) return <div className="loading"></div>
   if (error) return <div>Erro: {error}</div>
 
   return (
-    <div className={styles.container}>
+    <section className={`${styles.container} animeLeft`}>
       {productDetail && (
         <div className={styles['product-detail']}>
           <Head
@@ -45,7 +45,7 @@ const DetalheProduto = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   )
 }
 

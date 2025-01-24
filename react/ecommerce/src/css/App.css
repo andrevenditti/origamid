@@ -9,10 +9,6 @@ html {
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-title: Georgia, "Times New Roman", Times, serif;
   --font-size: 1.2rem;
-  --color: #19f;
-  --color-light: #adf;
-  --color-dark: #018;
-  --radius: 0.2rem;
 }
 
 body,
@@ -27,4 +23,38 @@ h1,
 h2,
 h3 {
   font-family: var(--font-title);
+}
+
+ul,li {
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.loading {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-right-color: transparent;
+  animation: loading 1s infinite ease-out;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
