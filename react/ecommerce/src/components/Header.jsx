@@ -5,12 +5,20 @@ import styles from '../css/Header.module.css'
 const Header = () => {
   return (
     <header className={styles.header}>
-      <NavLink to="/" className={styles.link}>
-        Produtos
-      </NavLink>
-      <NavLink to="/contato" className={styles.link}>
-        Contato
-      </NavLink>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/" className={styles.link} end>
+              Produtos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contato" className={styles.link}>
+              Contato
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

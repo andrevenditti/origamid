@@ -1,10 +1,11 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import Produtos from './Produtos'
-import Contato from './Contato'
-import DetalheProduto from './DetalheProduto'
-import Header from './Header'
-import Footer from './Footer'
+import Produtos from './components/Produtos'
+import Contato from './components/Contato'
+import DetalheProduto from './components/DetalheProduto'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import './css/App.css'
 
 const App = () => {
   return (
